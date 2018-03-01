@@ -1,5 +1,6 @@
 require("dotenv").config();
 var fs = require("fs");
+var inquirer = require("inquirer");
 
 var Twitter = require("twitter");
 var Spotify = require("node-spotify-api");
@@ -7,6 +8,21 @@ var keys = require("./keys");
 
 var spotify = new Spotify(keys.spotify);
 var client = new Twitter(keys.twitter);
+
+// need instructions for this application to pop up
+
+// inquirer.prompt([
+//     {
+//         type: "confirm",
+//         name: "user",
+//         message: "Would you like instructions?"
+//     }
+
+// ]).then(function(answer){
+//     if(answer.user === true){
+//         doThis();
+//     }
+// });
 
 // need to handle the command using a switch to pick
 // which one to grab from below
@@ -28,7 +44,7 @@ switch (action) {
     movieThis();
     break;
 
-   case "doThis":
+   case "do-this":
    doThis(); 
     break;
 }
