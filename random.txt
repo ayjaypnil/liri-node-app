@@ -1,1 +1,1 @@
-spotify-this-song,"I Want it That Way"
+Welcome to LiriBot, ---, Type: "node liri.js" + One of the below commands!, ---,    spotify-this-song + "song name",    my-tweets,    movie-this + "movie name", ---, For Example: node liri.js spotify-this-song "Got Money", ---, --> Then hit enter <---

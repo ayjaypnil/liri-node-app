@@ -28,6 +28,9 @@ switch (action) {
     movieThis();
     break;
 
+   case "doThis":
+   doThis(); 
+    break;
 }
 
 
@@ -109,4 +112,16 @@ function spotifySong() {
   );
 }
 
+function doThis(){
+    fs.readFile("random.txt", "utf8", function(err, data) {
+    data = data.split(", ");
+    var result = 0;
 
+    for (var i = 0; i < data.length; i++) {
+        if (parseFloat(data[i])) {
+        result += parseFloat(data[i]);
+        }
+    }
+    console.log(data);
+    });
+}
